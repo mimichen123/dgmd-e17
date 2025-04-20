@@ -1,80 +1,46 @@
-from enum import Enum
-import cv
 import time
-from PIL import Image
 import numpy as np
 import cv2
+from enum import Enum
+from PIL import Image
 from typing import Tuple
+import cv  # Duckietown's computer vision library
 
-# Mock car class to simulate motor control
-class MockCar:
-    def command_motor_pwms(self, left, right):
-        print(f"Simulating motor control: left={left}, right={right}")
-
-# States that the driver can be in.
 class DriveState(Enum):
     STOPPED = 1
-    ROLLING_INTO_INTERSECTION = 2
-    IN_INTERSECTION = 3
-    FOLLOWING_LANE = 4
-    FINISHED = 5
+    FOLLOWING_LANE = 2
+    FINISHED = 3
 
 class Driver:
-    def __init__(self, arduino_interface):
-        self.car = arduino_interface  # MockCar instance
+    def __init__(self, car_interface):
+        self.car = car_interface  # Duckiebot car interface
         self.speed_limit = 10.0
-        self.last_stop = False
+        self.state = DriveState.FOLLOWING_LANE
         self.num_updates = 0
-        self.start_time = None
-
-        self.set_state(DriveState.FOLLOWING_LANE)
-        self.needs_instruction = True
-        self.next_turn = None
-
-        self.red_roi = cv.red_roi
-        self.green_roi = cv.green_roi
-        self.green_roi.recenter(*self.red_roi.get_center())
-
-    def set_state(self, new_state):
-        print(f'State changed to {new_state}')
-        self.state = new_state
         self.start_time = time.time()
-        self.num_updates = 0
-        
+
     def update(self, image):
-        if self.needs_instruction:
-            print('Driver needs instruction!')
-            return
-
-        self.num_updates += 1
-
-        # Lane Following
         if self.state == DriveState.FOLLOWING_LANE:
             steering = compute_steering(image)
-            
             # Use the computed steering to control the car's motors
             self.car.command_motor_pwms(self.speed_limit, steering)
-        
-        elif self.state == DriveState.STOPPED:
-            # Implement stop logic or checking for green light
-            pass
 
     def debug_image(self, image):
         print('Debugging image')
-        cv.draw_region(image, self.red_roi, (255, 255, 255))
-        cv.draw_region(image, self.green_roi, (255, 255, 0))
+        # Draw region of interest (ROI) for debugging purposes
+        cv.draw_region(image, cv.red_roi, (255, 255, 255))
+        cv.draw_region(image, cv.green_roi, (255, 255, 0))
         Image.fromarray(image, 'RGB').show()
-
 
 # Function to compute the steering based on lane markings
 def compute_steering(image: np.ndarray) -> float:
     mask_left_edge, mask_right_edge = detect_lane_markings(image)
     
-    # Get the steering weight matrices
+    # Get the steering weight matrices for left and right lane markings
     steer_matrix_left = get_steer_matrix_left_lane_markings(mask_left_edge.shape)
     steer_matrix_right = get_steer_matrix_right_lane_markings(mask_right_edge.shape)
     
-    # Compute steering command by summing weighted masks
+    # Compute the steering command by summing weighted masks
     steering = np.sum(steer_matrix_left * mask_left_edge) + np.sum(steer_matrix_right * mask_right_edge)
     
     return steering
@@ -99,11 +65,9 @@ def detect_lane_markings(image: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
 def get_steer_matrix_left_lane_markings(shape: Tuple[int, int]) -> np.ndarray:
     """
     Args:
-        shape:              The shape of the steer matrix.
-
-    Return:
-        steer_matrix_left:  The steering (angular rate) matrix for Braitenberg-like control
-                            using the masked left lane markings (numpy.ndarray)
+        shape: The shape of the steer matrix.
+    Returns:
+        steer_matrix_left: The steering matrix for Braitenberg-like control using the left lane markings.
     """
     rows, cols = shape
     steer_matrix_left = np.zeros((rows, cols))
@@ -115,15 +79,12 @@ def get_steer_matrix_left_lane_markings(shape: Tuple[int, int]) -> np.ndarray:
 
     return steer_matrix_left
 
-
 def get_steer_matrix_right_lane_markings(shape: Tuple[int, int]) -> np.ndarray:
     """
     Args:
-        shape:               The shape of the steer matrix.
-
-    Return:
-        steer_matrix_right:  The steering (angular rate) matrix for Braitenberg-like control
-                             using the masked right lane markings (numpy.ndarray)
+        shape: The shape of the steer matrix.
+    Returns:
+        steer_matrix_right: The steering matrix for Braitenberg-like control using the right lane markings.
     """
     rows, cols = shape
     steer_matrix_right = np.zeros((rows, cols))
@@ -135,13 +96,12 @@ def get_steer_matrix_right_lane_markings(shape: Tuple[int, int]) -> np.ndarray:
 
     return steer_matrix_right
 
-
 if __name__ == '__main__':
-    # Example of using the mock car for testing
+    # Initialize car interface (e.g., use a mock or real car control interface)
     mock_car = MockCar()
     driver = Driver(mock_car)
     
-    # Simulating image input (use an actual image here)
+    # Simulating image input (use actual camera feed in Duckietown)
     dummy_image = np.zeros((240, 320, 3), dtype=np.uint8)  # Placeholder image for testing
 
     # Run the update method with dummy image
