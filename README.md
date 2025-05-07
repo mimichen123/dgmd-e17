@@ -55,14 +55,14 @@ dts duckiebot update [your_robot_name]</code></pre>
   </ol>
   
   ## Integrate your solution into the Duckietown autonomy stack<br>
-  In your local <code>duckietown-lx</code> environment:<br>
-  ### Object Detection ###
-&nbsp;&nbsp;&nbsp;&nbsp; Navigate to the object-detection solution directory <code>object-detection/packages/solution</code><br>
-
-  Copy the implementation files into this directory
+  To integrate your work, follow the steps below in your local duckietown-lx environment.
+  
+  ### 📦 Object Detection ###
+  Copy the implementation files to the following directory: <code>object-detection/packages/solution</code><br>
+  <br>
   <ul>    
-    <li><a href="object-detection/integration_activity.py">Object detection integration (integration_activity.py)</a></li>
-    <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training (Colab notebook)</a></li>
+    <li><a href="object-detection/integration_activity.py">Object detection integration</a> - handles integration logic</li>
+    <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a>  – Google Colab notebook for model training</li>
   </ul>
   
   ### Lane Following ###
@@ -70,8 +70,7 @@ dts duckiebot update [your_robot_name]</code></pre>
   <ul> <li><a href="lane-following/visual_servoing_activity.py">Lane following (visual_servoing_activity.py)</a></li>
   This ensures your solution is correctly integrated into the Duckietown autonomy stack.
 </li><br><br>
-
-</ol>
+</ul>
 
 ## 🚀 Deploy and Test on Duckiebot
 
