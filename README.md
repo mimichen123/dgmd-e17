@@ -24,21 +24,29 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
   <li>YOLOv5 - for object detection and image recognition</li>
 </ul>
 
+## License
+This repository inherits the same license as the original <a href="https://github.com/duckietown/duckietown-lx">Duckietown LX</a> repository.
+For full details on the licensing terms, please refer to the original repository.
 
 ## Instructions
 
 <ol>
   <li>
-    <strong>Set up the Duckietown environment</strong><br>
-    After a DuckieBot is built, fork from the Duckietown GitHub repository: <a href="https://github.com/duckietown/duckietown-lx">Duckietown-lx learning environment repository</a> and follow all the steps outlined in the 
-    <a href="https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md">Duckietown-LX instructions</a>.<br>
+    The Duckietown Learning Experience<br>
+    <ul style="list-style-type: disc;"><li>
+    Once your Duckiebot is built, fork the 
+    <a href="https://github.com/duckietown/duckietown-lx">Duckietown-LX learning environment repository</a> and follow the setup steps outlined in the 
+    <a href="https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md">Duckietown-LX instructions</a>.
   </li><br>
-  <li><strong>Create your own GitHub repository</strong><br>
+    <li>The purpose of this fork is to add and test our solutions to the original Duckietown Learning Experiences repository.</li></ul>
+      <br></li>
+    
+  <li>Create your own GitHub repository<br>
     Setup your own GitHub repository to store and track this solution and make edits. 
   </li><br>
   
   <li>
-  <strong>Update your systems</strong><br>
+  Update your systems<br>
   Before proceeding, update all system packages, dependencies, shell, laptop/desktop, and the Duckiebot to ensure compatibility.<br><br>  
   <pre><code>dts update
 dts desktop update
@@ -46,14 +54,14 @@ dts duckiebot update [your_robot_name]</code></pre>
 </li>
   
   <li>
-    <strong>Integrate our solution into Duckietown autonomy stack</strong><br>
+    Integrate our solution into Duckietown autonomy stack<br>
     Navigate to the <code>[exercise]/packages/solution</code> directory in your local <code>duckietown-lx</code> environment.<br><br>
     Replace <code>[exercise]</code> with the name of your specific module folder (e.g., <code>visual-lane-servoing</code> or <code>object-detection</code>).<br><br>
     Then, copy the files for  <a href="https://github.com/mimichen123/dgmd-e17/visual-lane-servoing">lane following </a> and  <a href="https://github.com/mimichen123/dgmd-e17/object-detection"> object detection</a>  to the module folder in your repository. This step ensures this implementation is correctly integrated into the Duckietown autonomy stack.
   </li><br>
 
  <li>
-  <strong>Pull the latest changes from the solution branch</strong><br>   
+  Pull the latest changes from the solution branch<br>   
   If you have already cloned the repository and copied the solution files, and you want to update your local copy with the latest changes, run the following command in your Duckietown shell:<br><br>
   <pre><code>git pull origin [branch-name]</code></pre>
 </li></ol>
@@ -70,8 +78,12 @@ dts code workbench --duckiebot [your_robot_name]
 ```
 
 ## Troubleshooting
-Make sure you are logged into docker using dts
-```
-dts challenges config --docker-username <USERNAME> --docker-password <PASSWORD>
-```
-If you are getting errors, check that you have used dts1 token and not dts2 token
+<ul>
+  <li>
+    Make sure you are logged into Docker using <code>dts</code>:<br><br>
+    <pre><code>dts challenges config --docker-username &lt;USERNAME&gt; --docker-password &lt;PASSWORD&gt;</code></pre>
+  </li>
+  <li>
+    If you are getting errors, check that you are using a <code>dts1</code> token and not a <code>dts2</code> token.
+  </li>
+</ul>
