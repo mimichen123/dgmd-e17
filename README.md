@@ -17,7 +17,7 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 
 ### Accounts | Software ###
 <ul><li>Duckietown account with valid token</li>
-  <li>Duckietown Shell command installed</li>
+  <li>Duckietown shell command installed</li>
 <li>Docker (installed and account set up)</li>
 <li>Python (recommended: version 3.7 or higher)</li>
   <li>OpenCV - for computer vision and image processing</li>
