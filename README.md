@@ -30,7 +30,7 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 <ol>
   <li>
     <strong>Set up the Duckietown environment</strong><br>
-    Fork the <a href="https://github.com/duckietown/duckietown-lx">duckietown-lx learning environment repository</a> and follow all the steps outlined in the 
+    After a DuckieBot is built, fork from the Duckietown GitHub repository: <a href="https://github.com/duckietown/duckietown-lx">duckietown-lx learning environment repository</a> and follow all the steps outlined in the 
     <a href="https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md">Duckietown-LX instructions</a>.<br>
     Then create your own GitHub repository to store and track your solution.
   </li><br>
@@ -42,7 +42,7 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
   </li>
   
   <li>
-    <strong>Integrate your solution</strong><br>
+    <strong>Integrate our solution</strong><br>
     Navigate to the <code>[exercise]/packages/solution</code> directory in your local <code>duckietown-lx</code> environment.<br>
     Replace <code>[exercise]</code> with the name of your specific module folder (e.g., <code>visual-lane-servoing</code> or <code>object-detection</code>).<br><br>
     Next, copy the files from this repository to your directory:<br>
@@ -52,8 +52,19 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
   </li>
 </ol>
 
-## Training
+## Test on Robot
 
-Run the training
+First, evaluate work locally to check for errors:
+```
+dts code evaluate
+```
+Test on your robot our solution
+```
+dts code workbench --duckiebot [your_robot_name]
+```
 
+## Troubleshooting
+Make sure you are logged into docker using dts
+dts challenges config --docker-username <USERNAME> --docker-password <PASSWORD>
 
+If you are getting errors, check that you have used dts1 token and not dts2 token
