@@ -4,7 +4,7 @@ import cv2
 from enum import Enum
 from PIL import Image
 from typing import Tuple
-import cv  
+import duckiebot_lane_finder  
 
 class DriveState(Enum):
     STOPPED = 1
@@ -28,8 +28,8 @@ class Driver:
     def debug_image(self, image):
         print('Debugging image')
         # Draw region of interest (ROI) for debugging purposes
-        cv.draw_region(image, cv.red_roi, (255, 255, 255))
-        cv.draw_region(image, cv.green_roi, (255, 255, 0))
+        duckiebot_lane_finder.draw_region(image, duckiebot_lane_finder.red_roi, (255, 255, 255))
+        duckiebot_lane_finder.draw_region(image, duckiebot_lane_finder.green_roi, (255, 255, 0))
         Image.fromarray(image, 'RGB').show()
 
 # Function to compute the steering based on lane markings
