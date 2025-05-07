@@ -59,20 +59,19 @@ dts duckiebot update [your_robot_name]</code></pre>
   
   ### 📦 Object Detection ###
   Copy the implementation files to the following directory: <code>object-detection/packages/solution</code><br>
-  <br>
   <ul>    
-    <li><a href="object-detection/integration_activity.py">Object detection integration</a> - handles integration logic</li>
     <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a>  – Google Colab notebook for model training</li>
+    <li><a href="object-detection/integration_activity.py">Object detection integration</a> - handles integration logic</li>
   </ul>
   
-  ### Lane Following ###
-  Copy the implementation files into this directory
-  <ul> <li><a href="lane-following/visual_servoing_activity.py">Lane following (visual_servoing_activity.py)</a></li>
-  This ensures your solution is correctly integrated into the Duckietown autonomy stack.
-</li><br><br>
-</ul>
+  ### 🛣️ Lane Following ###
+  Copy the implementation files to the following directory: <code>visual-lane-servoing/packages/solution</code><br>  
+  <ul>    
+    <li><a href="lane-following/visual_servoing_activity.py"">Visual Lane Servoing</a> - main lane following logic</li>
+  </ul>
+<br><br>
 
-## 🚀 Deploy and Test on Duckiebot
+## 🚀 Deploy and Test on Duckiebot ##
 
 #### Pull the latest changes from the solution branch<br>   
   If you have already cloned the repository and copied the solution files, and you want to update your local copy with the latest changes, run the following command in your Duckietown shell:<br><br>
@@ -94,12 +93,12 @@ dts code workbench --duckiebot [your_robot_name]
 ```
 dts duckiebot keyboard_control ![your_robot_name]
 ```
-#### Object Detection<br>
+### 📦 Object Detection ### 
 <ol><li>Use the joystick controller to start navigating the Duckiebot</li><br>
 	<li>As the Duckiebot moves, its onboard camera should detect and identify rubber duckies positioned along the road</li>
 </ol>
 
-#### Lane Following Procedure<br>
+### 🛣️ Lane Following ###
 <ol><li>Click Calibrate to perform sensor and camera calibration</li><br>
 <li>Click start to begin lane-following behavior</li><br>
 <li>Click Stop to stop the robot</li></ol>
