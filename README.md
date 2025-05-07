@@ -1,8 +1,8 @@
-# DGMD E-17: Robotics, Autonomous Vehicles, Drones, and Artificial Intelligence
+# **DGMD E-17: Robotics, Autonomous Vehicles, Drones, and Artificial Intelligence
 
 Real-Time Visual Obstacle Detection on Duckiebot
-# Robot
-Code for our final project.
+# About
+[background]
 
 Python Requirements:
 py
