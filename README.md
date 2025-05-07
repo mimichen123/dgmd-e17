@@ -99,9 +99,9 @@ dts duckiebot keyboard_control ![your_robot_name]
 </ol>
 
 ### 🛣️  Lane Following ###
-<ol><li>Click Calibrate to perform sensor and camera calibration</li><br>
-<li>Click start to begin lane-following behavior</li><br>
-<li>Click Stop to stop the robot</li></ol>
+<ol><li>Click <i>Calibrate</i> to perform sensor and camera calibration</li><br>
+<li>Click <i>Start</i> to begin lane-following behavior</li><br>
+<li>Click <i>Stop</i> to stop the robot</li></ol>
 
 ___ 
 ## Troubleshooting
