@@ -4,7 +4,7 @@ import cv2
 from enum import Enum
 from PIL import Image
 from typing import Tuple
-import cv  # Duckietown's computer vision library
+import cv  
 
 class DriveState(Enum):
     STOPPED = 1
