@@ -36,7 +36,7 @@ For full details on the licensing terms, please refer to the original repository
     <ul style="list-style-type: disc;"><li>
     Once your Duckiebot is built, fork the 
     <a href="https://github.com/duckietown/duckietown-lx">Duckietown-LX learning environment repository</a> and follow the setup steps.
-  </li><br>
+  </li>
     <li>The purpose of this fork is to add and test our solutions to the original Duckietown Learning Experiences repository.</li></ul>
       <br></li>
     
@@ -91,7 +91,7 @@ Lane Following Procedure
 ## Troubleshooting
 <ul>
   <li>
-    Make sure you are logged into Docker using <code>dts</code>:<br><br>
+    Make sure you are logged into Docker using <code>dts</code><br><br>
     <pre><code>dts challenges config --docker-username &lt;USERNAME&gt; --docker-password &lt;PASSWORD&gt;</code></pre>
   </li>
   <li>
