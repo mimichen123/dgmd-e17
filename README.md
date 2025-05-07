@@ -1,9 +1,9 @@
 # **DGMD E-17: Robotics, Autonomous Vehicles, Drones, and Artificial Intelligence**
+# Real-Time Visual Obstacle Detection on Duckiebot
 
-Real-Time Visual Obstacle Detection on Duckiebot
-
-# About
+## About
 [background]
+This project expands on the open-source Duckietown platform and utilizes and autonomous robot for object detection.
 
 Python Requirements:
 py
