@@ -57,7 +57,7 @@ dts duckiebot update [your_robot_name]</code></pre>
     Integrate our solution into Duckietown autonomy stack<br>
     Navigate to the <code>[exercise]/packages/solution</code> directory in your local <code>duckietown-lx</code> environment.<br><br>
     Replace <code>[exercise]</code> with the name of your specific module folder (e.g., <code>visual-lane-servoing</code> or <code>object-detection</code>).<br><br>
-    Then, copy our files here for  <a href="lane-following/visual_servoing_activity.py">lane following </a> and  <a href="https://github.com/mimichen123/dgmd-e17/object-detection"> object detection</a>  to the module folder in your repository. This step ensures this implementation is correctly integrated into the Duckietown autonomy stack.
+    Then, copy our files here for  <a href="lane-following/visual_servoing_activity.py">lane following </a> and  <a href="object-detection/integration_activity.py"> object detection</a>  to the module folder in your repository. This step ensures this implementation is correctly integrated into the Duckietown autonomy stack.
   </li><br>
 
  <li>
