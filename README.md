@@ -6,7 +6,7 @@
 This project builds on the open-source Duckietown platform by deploying an autonomous robot with integrated object detection capabilities. It investigates how perception and control systems interact in real time, allowing the robot to identify and react to physical objects (represented by yellow rubber ducks) on the Duckietown road. The project emphasizes practical applications of computer vision and autonomous decision-making in a simplified yet dynamic setting.
 
 ## Background
-The Duckiebot autonomously drives through a custom-built Duckietown layout, leveraging object detection to identify rubber ducks randomly positioned along the roadway. To support this functionality, we collect training data from the Duckietown simulator and use it to train a YOLOv5 object detection model. Once trained, the model will be integrated into the Duckietown autonomy stack to enhance the robot’s perception capabilities in real time.<br>
+The Duckiebot autonomously drives through a custom-built Duckietown layout, leveraging object detection to identify rubber ducks randomly positioned along the roadway. To support this functionality, we collect training data from the Duckietown simulator and use it to train a YOLOv5 object detection model. Once trained, the model will be integrated into the Duckietown autonomy stack to enhance the robot’s perception capabilities in real time.<br><br>
 <img src="assets/duckiebot.jpg" alt="Duckiebot on track" width="150" height="150"/>
 
 ## Requirements
@@ -33,32 +33,34 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
     After a DuckieBot is built, fork from the Duckietown GitHub repository: <a href="https://github.com/duckietown/duckietown-lx">Duckietown-lx learning environment repository</a> and follow all the steps outlined in the 
     <a href="https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md">Duckietown-LX instructions</a>.<br>
   </li><br>
-  <li>
-    Then, create your own GitHub repository to store and track your solution.
+  <li><strong>Create your own GitHub repository</strong><br>
+    Setup your own GitHub repository to store and track this solution and make edits. 
   </li><br>
   
   <li>
-    <strong>Update your systems</strong><br>
-    Before proceeding, update all system packages and dependencies to ensure compatibility.<br>
-    <pre><code>dts update</code></pre>
-    <pre><code>dts desktop update</code></pre>
-    <pre><code>dts duckiebot update [your_robot_name]</code></pre>
-  </li>
+  <strong>Update your systems</strong><br>
+  Before proceeding, update all system packages, dependencies, shell, laptop/desktop, and the Duckiebot to ensure compatibility.<br><br>  
+  <pre><code>dts update
+dts desktop update
+dts duckiebot update [your_robot_name]</code></pre>
+</li>
   
   <li>
-    <strong>Integrate our solution</strong><br>
-    Navigate to the <code>[exercise]/packages/solution</code> directory in your local <code>duckietown-lx</code> environment.<br>
+    <strong>Integrate our solution into Duckietown autonomy stack</strong><br>
+    Navigate to the <code>[exercise]/packages/solution</code> directory in your local <code>duckietown-lx</code> environment.<br><br>
     Replace <code>[exercise]</code> with the name of your specific module folder (e.g., <code>visual-lane-servoing</code> or <code>object-detection</code>).<br><br>
-    Next, copy the files from this repository to your directory:<br>
-    <a href="https://github.com/mimichen123/dgmd-e17/visual-lane-servoing">Visual Lane Servoing</a><br>
-    <a href="https://github.com/mimichen123/dgmd-e17/object-detection">Object Detection</a><br><br>
-    This step ensures this implementation is correctly integrated into the Duckietown autonomy stack.
-  </li>
-</ol>
+    Then, copy the files for  <a href="https://github.com/mimichen123/dgmd-e17/visual-lane-servoing">lane following </a> and  <a href="https://github.com/mimichen123/dgmd-e17/object-detection"> object detection</a>  to the module folder in your repository. This step ensures this implementation is correctly integrated into the Duckietown autonomy stack.
+  </li><br>
+
+ <li>
+  <strong>Pull the latest changes from the solution branch</strong><br>   
+  If you have already cloned the repository and copied the solution files, and you want to update your local copy with the latest changes, run the following command in your Duckietown shell:<br><br>
+  <pre><code>git pull origin [branch-name]</code></pre>
+</li></ol>
 
 ## Test on Robot
 
-Evaluate work locally to check for errors:
+Evaluate work locally to check for errors
 ```
 dts code evaluate
 ```
