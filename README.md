@@ -7,7 +7,7 @@ This project builds on the open-source Duckietown platform by deploying an auton
 
 ## Instructions
 The Duckiebot autonomously drives through a custom-built Duckietown layout, using object detection to identify rubber ducks placed at random on the roadway.
-!assets/duckiebot.png
+![image_of_duckiebot_obstacles](assets/duckiebot.jpg)
 
 Python Requirements:
 py
