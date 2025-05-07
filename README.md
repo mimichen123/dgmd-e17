@@ -1,5 +1,5 @@
 ##### **DGMD E-17: Robotics, Autonomous Vehicles, Drones, and Artificial Intelligence**
-# Real-Time Visual Obstacle Detection on Duckiebot DB21-J4 with NVIDIA Jetson Nano 4GB with GPU
+# Real-Time Visual Obstacle Detection on Duckiebot DB21-J4 with NVIDIA Jetson Nano 4GB
 
 
 ## About
