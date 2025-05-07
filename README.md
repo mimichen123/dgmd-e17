@@ -35,8 +35,7 @@ For full details on the licensing terms, please refer to the original repository
     The Duckietown Learning Experience<br>
     <ul style="list-style-type: disc;"><li>
     Once your Duckiebot is built, fork the 
-    <a href="https://github.com/duckietown/duckietown-lx">Duckietown-LX learning environment repository</a> and follow the setup steps outlined in the 
-    <a href="https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md">Duckietown-LX instructions</a>.
+    <a href="https://github.com/duckietown/duckietown-lx">Duckietown-LX learning environment repository</a> and follow the setup steps.
   </li><br>
     <li>The purpose of this fork is to add and test our solutions to the original Duckietown Learning Experiences repository.</li></ul>
       <br></li>
@@ -76,7 +75,19 @@ Test our solution on your robot
 ```
 dts code workbench --duckiebot [your_robot_name]
 ```
+Run Duckiebot Joystick Controller<br>
+<ol><li>Open a new terminal window.</li><br>
+<li>Launch the Duckiebot joystick controller by running</li>  
+</ol>	
 
+```
+dts duckiebot keyboard_control ![your_robot_name]
+```
+Lane Following Procedure
+<ol><li>Click Calibrate to perform sensor and camera calibration.</li><br>
+<li>Navigate to Launch Lane Following to start the lane-following behavior.</li><br>
+<li>When finished, click Stop to safely stop the robot.</li></ol>
+	
 ## Troubleshooting
 <ul>
   <li>
