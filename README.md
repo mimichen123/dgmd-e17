@@ -84,9 +84,9 @@ Run Duckiebot Joystick Controller<br>
 dts duckiebot keyboard_control ![your_robot_name]
 ```
 Lane Following Procedure
-<ol><li>Click Calibrate to perform sensor and camera calibration.</li><br>
-<li>Navigate to Launch Lane Following to start the lane-following behavior.</li><br>
-<li>When finished, click Stop to safely stop the robot.</li></ol>
+<ol><li>Click Calibrate to perform sensor and camera calibration</li><br>
+<li>Click start to begin lane-following behavior</li><br>
+<li>Click Stop to stop the robot</li></ol>
 	
 ## Troubleshooting
 <ul>
