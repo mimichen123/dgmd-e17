@@ -25,9 +25,9 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 </ul>
 
 
-## Setting up the Duckietown learning environment:
+## Setting up the Duckietown environment:
 
-Fork the [duckietown-lx repository](https://github.com/duckietown/duckietown-lx) and follow all the steps outlined in the Duckietown-LX instructions. Create a new repository and push your work to your own repository [duckietown instructions](https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md)
+Fork the [duckietown-lx learning environment repository](https://github.com/duckietown/duckietown-lx) and follow all the steps outlined in the Duckietown-LX instructions. Create a new repository and push your work to your own repository [duckietown instructions](https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md)
 
 Make sure system is up-to-date
 ```
