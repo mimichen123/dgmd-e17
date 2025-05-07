@@ -87,7 +87,7 @@ dts duckiebot keyboard_control ![your_robot_name]
 #### Object Detection<br>
 <ol><li>Use the joystick controller to start navigating the Duckiebot</li><br>
 	<li>As the Duckiebot moves, its onboard camera should detect and identify rubber duckies positioned along the road</li>
-</ol><br>
+</ol>
 
 #### Lane Following Procedure<br>
 <ol><li>Click Calibrate to perform sensor and camera calibration</li><br>
