@@ -16,7 +16,7 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 </ul>
 
 ### Accounts | Software ###
-<ul><li>Duckietown account with valid token</li>
+<ul><li>Duckietown account with valid token (use dts1 not dts2)</li>
   <li>Duckietown shell command installed</li>
 <li>Docker (installed and account set up)</li>
 <li>Python (recommended: version 3.7 or higher)</li>
@@ -48,9 +48,12 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
     Next, copy the files from this repository to your repository to test it:<br>
     <a href="https://github.com/mimichen123/dgmd-e17/visual-lane-servoing">https://github.com/mimichen123/dgmd-e17/visual-lane-servoing</a><br>
     <a href="https://github.com/mimichen123/dgmd-e17/object-detection">https://github.com/mimichen123/dgmd-e17/object-detection</a><br><br>
-    This step ensures your implementation is correctly integrated into the Duckietown autonomy stack.
+    This step ensures this implementation is correctly integrated into the Duckietown autonomy stack.
   </li>
 </ol>
 
+## Instructions
+
+Run the training
 
 
