@@ -30,9 +30,9 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 <ol>
   <li>
     <strong>Set up the Duckietown environment</strong><br>
-    After a DuckieBot is built, fork from the Duckietown GitHub repository: <a href="https://github.com/duckietown/duckietown-lx">duckietown-lx learning environment repository</a> and follow all the steps outlined in the 
+    After a DuckieBot is built, fork from the Duckietown GitHub repository: <a href="https://github.com/duckietown/duckietown-lx">Duckietown-lx learning environment repository</a> and follow all the steps outlined in the 
     <a href="https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md">Duckietown-LX instructions</a>.<br>
-    Then create your own GitHub repository to store and track your solution.
+    Then, create your own GitHub repository to store and track your solution.
   </li><br>
   
   <li>
