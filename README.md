@@ -57,14 +57,14 @@ dts duckiebot update [your_robot_name]</code></pre>
   ## Integrate your solution into the Duckietown autonomy stack<br>
   To integrate your work, follow the steps below in your local duckietown-lx environment.
   
-  ### 📦 Object Detection ###
+  ### 📦  Object Detection ###
   Copy the implementation files to the following directory: <code>object-detection/packages/solution</code><br>
   <ul>    
     <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a>  – Google Colab notebook for model training</li>
     <li><a href="object-detection/integration_activity.py">Object detection integration</a> - handles integration logic</li>
   </ul>
   
-  ### 🛣️ Lane Following ###
+  ### 🛣️  Lane Following ###
   Copy the implementation files to the following directory: <code>visual-lane-servoing/packages/solution</code><br>  
   <ul>    
     <li><a href="lane-following/visual_servoing_activity.py"">Visual Lane Servoing</a> - main lane following logic</li>
@@ -93,12 +93,12 @@ dts code workbench --duckiebot [your_robot_name]
 ```
 dts duckiebot keyboard_control ![your_robot_name]
 ```
-### 📦 Object Detection ### 
+### 📦  Object Detection ### 
 <ol><li>Use the joystick controller to start navigating the Duckiebot</li><br>
 	<li>As the Duckiebot moves, its onboard camera should detect and identify rubber duckies positioned along the road</li>
 </ol>
 
-### 🛣️ Lane Following ###
+### 🛣️  Lane Following ###
 <ol><li>Click Calibrate to perform sensor and camera calibration</li><br>
 <li>Click start to begin lane-following behavior</li><br>
 <li>Click Stop to stop the robot</li></ol>
