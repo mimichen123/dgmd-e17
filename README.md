@@ -32,12 +32,16 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
     <strong>Set up the Duckietown environment</strong><br>
     After a DuckieBot is built, fork from the Duckietown GitHub repository: <a href="https://github.com/duckietown/duckietown-lx">Duckietown-lx learning environment repository</a> and follow all the steps outlined in the 
     <a href="https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md">Duckietown-LX instructions</a>.<br>
+  </li><br>
+  <li>
     Then, create your own GitHub repository to store and track your solution.
   </li><br>
   
   <li>
-    <strong>Update your system</strong><br>
+    <strong>Update your systems</strong><br>
     Before proceeding, update all system packages and dependencies to ensure compatibility.<br>
+    <pre><code>dts update</code></pre>
+    <pre><code>dts desktop update</code></pre>
     <pre><code>dts duckiebot update [your_robot_name]</code></pre>
   </li>
   
@@ -54,17 +58,18 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 
 ## Test on Robot
 
-First, evaluate work locally to check for errors:
+Evaluate work locally to check for errors:
 ```
 dts code evaluate
 ```
-Test on your robot our solution
+Test our solution on your robot
 ```
 dts code workbench --duckiebot [your_robot_name]
 ```
 
 ## Troubleshooting
 Make sure you are logged into docker using dts
+```
 dts challenges config --docker-username <USERNAME> --docker-password <PASSWORD>
-
+```
 If you are getting errors, check that you have used dts1 token and not dts2 token
