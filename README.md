@@ -52,21 +52,32 @@ For full details on the licensing terms, please refer to the original repository
 dts desktop update
 dts duckiebot update [your_robot_name]</code></pre>
 </li>
+  </ol>
   
-  <li>
-    Integrate our solution into Duckietown autonomy stack<br>
-    Navigate to the <code>[exercise]/packages/solution</code> directory in your local <code>duckietown-lx</code> environment.<br><br>
-    Replace <code>[exercise]</code> with the name of your specific module folder (e.g., <code>visual-lane-servoing</code> or <code>object-detection</code>).<br><br>
-    Then, copy our files here for  <a href="lane-following/visual_servoing_activity.py">lane following </a> and  <a href="object-detection/integration_activity.py"> object detection</a>  to the module folder in your repository. This step ensures this implementation is correctly integrated into the Duckietown autonomy stack.
-  </li><br>
+  ## Integrate your solution into the Duckietown autonomy stack<br>
+  In your local <code>duckietown-lx</code> environment:<br>
+  ### Object Detection ###
+&nbsp;&nbsp;&nbsp;&nbsp; Navigate to the object-detection solution directory <code>object-detection/packages/solution</code><br>
 
- <li>
-  Pull the latest changes from the solution branch<br>   
-  If you have already cloned the repository and copied the solution files, and you want to update your local copy with the latest changes, run the following command in your Duckietown shell:<br><br>
-  <pre><code>git pull origin [branch-name]</code></pre>
-</li></ol>
+  Copy the implementation files into this directory
+  <ul>    
+    <li><a href="object-detection/integration_activity.py">Object detection integration (integration_activity.py)</a></li>
+    <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training (Colab notebook)</a></li>
+  </ul>
+  
+  ### Lane Following ###
+  Copy the implementation files into this directory
+  <ul> <li><a href="lane-following/visual_servoing_activity.py">Lane following (visual_servoing_activity.py)</a></li>
+  This ensures your solution is correctly integrated into the Duckietown autonomy stack.
+</li><br><br>
+
+</ol>
 
 ## 🚀 Deploy and Test on Duckiebot
+
+#### Pull the latest changes from the solution branch<br>   
+  If you have already cloned the repository and copied the solution files, and you want to update your local copy with the latest changes, run the following command in your Duckietown shell:<br><br>
+  <pre><code>git pull origin [branch-name]</code></pre>
 
 #### Run a local evaluation to check for code errors
 ```
