@@ -1,5 +1,5 @@
 ##### **DGMD E-17: Robotics, Autonomous Vehicles, Drones, and Artificial Intelligence**
-# Real-Time Visual Obstacle Detection on Duckiebot DB21J with NVIDIA Jetson Nano 4GB with GPU
+# Real-Time Visual Obstacle Detection on Duckiebot DB21-J4 with NVIDIA Jetson Nano 4GB with GPU
 
 
 ## About
@@ -12,7 +12,7 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 ## Requirements
 ### Hardware ###
 <ul>
-  <li>Duckiebot DB21J with NVIDIA Jeson Nano 4GB</li>  
+  <li>Duckiebot DB21-J4 with NVIDIA Jeson Nano 4GB</li>  
 </ul>
 
 ### Accounts | Software ###
@@ -26,24 +26,20 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 
 
 ## Setting up the Duckietown learning environment:
+
 Make sure system is up-to-date
 ```
 dts duckiebot update [your robot name]
 ```
-
 Fork the [duckietown-lx repository](https://github.com/duckietown/duckietown-lx)
-
 Clone the repository (replace with your GitHub username):
 ```
 git clone -b mooc2022 git@github.com:<your_username>/duckietown-lx
-
 ```
-
 Change directory to duckietown-lx
 ```
 cd duckietown-lx
 ```
-
 Setup this repository to sync with your fork
 ```
 git remote -v
