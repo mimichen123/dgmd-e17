@@ -26,24 +26,32 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 
 
 ## Setting up the Duckietown learning environment:
+Make sure system is up-to-date
+```
+dts duckiebot update [your robot name]
+```
 
 Fork the [duckietown-lx repository](https://github.com/duckietown/duckietown-lx)
 
-Set up an upstream remote:
+Clone the repository (replace with your GitHub username):
 ```
-git remote add upstream git@github.com:duckietown/mooc-exercises.git
+git clone -b mooc2022 git@github.com:<your_username>/duckietown-lx
+
 ```
-Enter the exercises folder:
+
+Change directory to duckietown-lx
 ```
-cd mooc-exercises
+cd duckietown-lx
 ```
-Install required packages:
+
+Setup this repository to sync with your fork
 ```
-pip install numpy
-sudo apt-get install python3-pil python3-pil.imagetk
+git remote -v
 ```
-Deactivate the environment:
+Specify new remote upstream repository
 ```
-deactivate
+git remote add upstream https://github.com/duckietown/duckietown-lx```
 ```
+
+
 
