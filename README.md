@@ -5,7 +5,7 @@
 ## About
 This project builds on the open-source Duckietown platform by deploying an autonomous robot with integrated object detection capabilities. It investigates how perception and control systems interact in real time, allowing the robot to identify and react to physical objects (represented by yellow rubber ducks) on the Duckietown road. The project emphasizes practical applications of computer vision and autonomous decision-making in a simplified yet dynamic setting.
 
-## Instructions
+## Background
 The Duckiebot autonomously drives through a custom-built Duckietown layout, leveraging object detection to identify rubber ducks randomly positioned along the roadway. To support this functionality, we collect training data from the Duckietown simulator and use it to train a YOLOv5 object detection model. Once trained, the model will be integrated into the Duckietown autonomy stack to enhance the robot’s perception capabilities in real time.<br>
 <img src="assets/duckiebot.jpg" alt="Duckiebot on track" width="150" height="150"/>
 
@@ -25,15 +25,32 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 </ul>
 
 
-## Setting up the Duckietown environment:
+## Instructions
 
-Fork the [duckietown-lx learning environment repository](https://github.com/duckietown/duckietown-lx) and follow all the steps outlined in the Duckietown-LX instructions. Create a new repository and push your work to your own repository [duckietown instructions](https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md)
-
-Make sure system is up-to-date
-```
-dts duckiebot update [your_robot_name]
-```
-
+<ol>
+  <li>
+    <strong>Set up the Duckietown environment</strong><br>
+    Fork the <a href="https://github.com/duckietown/duckietown-lx">duckietown-lx learning environment repository</a> and follow all the steps outlined in the 
+    <a href="https://github.com/duckietown/duckietown-lx/blob/mooc2022/README.md">Duckietown-LX instructions</a>.<br>
+    Then create your own GitHub repository to store and track your solution.
+  </li><br>
+  
+  <li>
+    <strong>Update your system</strong><br>
+    Before proceeding, update all system packages and dependencies to ensure compatibility.<br>
+    <pre><code>dts duckiebot update [your_robot_name]</code></pre>
+  </li>
+  
+  <li>
+    <strong>Integrate your solution</strong><br>
+    Navigate to the <code>[exercise]/packages/solution</code> directory in your local <code>duckietown-lx</code> environment.<br>
+    Replace <code>[exercise]</code> with the name of your specific module folder (e.g., <code>visual-lane-servoing</code> or <code>object-detection</code>).<br><br>
+    Next, copy the files from this repository to your repository to test it:<br>
+    <a href="https://github.com/mimichen123/dgmd-e17/visual-lane-servoing">https://github.com/mimichen123/dgmd-e17/visual-lane-servoing</a><br>
+    <a href="https://github.com/mimichen123/dgmd-e17/object-detection">https://github.com/mimichen123/dgmd-e17/object-detection</a><br><br>
+    This step ensures your implementation is correctly integrated into the Duckietown autonomy stack.
+  </li>
+</ol>
 
 
 
