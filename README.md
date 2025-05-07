@@ -61,8 +61,8 @@ dts duckiebot update [your_robot_name]</code></pre>
   Copy the solution files to the following directory: <code>object-detection/packages/solution</code><br>
   <ul>  
 	  <li>
-  <a href="object-detection/dt_object_detection_training.ipynb">Object Detection Training</a><br>
-  Use this updated Google Colab notebook to train a YOLOv5 model on a custom Duckietown object detection dataset.
+  <a href="object-detection/duckietown_object_detection_dataset">Setup and collect dataset</a><br>
+  Here's a sample of what the dataset will look like, based on an 80/20 train-test split using real Duckietown images.
 </li>
     <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a><br>
 	    Create Duckietown object detection dataset and train on Yolo5 the object detection model on that dataset  – Google Colab notebook for model training</li>
