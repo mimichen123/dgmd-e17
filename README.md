@@ -54,18 +54,23 @@ dts duckiebot update [your_robot_name]</code></pre>
 </li>
   </ol>
   
-  ## Integrate your solution into the Duckietown autonomy stack<br>
-  To integrate your work, follow the steps below in your local duckietown-lx environment.
+  ## Integrate this solution into the Duckietown autonomy stack<br>
+  To integrate this work, follow the steps below in your local duckietown-lx environment.
   
   ### 📦  Object Detection ###
-  Copy the implementation files to the following directory: <code>object-detection/packages/solution</code><br>
-  <ul>    
-    <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a>  – Google Colab notebook for model training</li>
-    <li><a href="object-detection/integration_activity.py">Object detection integration</a> - handles integration logic</li>
+  Copy the solution files to the following directory: <code>object-detection/packages/solution</code><br>
+  <ul>  
+	  <li>
+  <a href="object-detection/dt_object_detection_training.ipynb">Object Detection Training</a><br>
+  Use this updated Google Colab notebook to train a YOLOv5 model on a custom Duckietown object detection dataset.
+</li>
+    <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a><br>
+	    Create Duckietown object detection dataset and train on Yolo5 the object detection model on that dataset  – Google Colab notebook for model training</li>
+    <li><a href="object-detection/integration_activity.py">Object detection integration</a> - Integrate the model into a ROS node </li>	  
   </ul>
   
   ### 🛣️  Lane Following ###
-  Copy the implementation files to the following directory: <code>visual-lane-servoing/packages/solution</code><br>  
+  Copy the solution files to the following directory: <code>visual-lane-servoing/packages/solution</code><br>  
   <ul>    
     <li><a href="lane-following/visual_servoing_activity.py"">Visual Lane Servoing</a> - main lane following logic</li>
   </ul>
