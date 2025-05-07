@@ -1,9 +1,10 @@
 ##### **DGMD E-17: Robotics, Autonomous Vehicles, Drones, and Artificial Intelligence**
+---
 # Real-Time Visual Obstacle Detection on Duckiebot DB21-J4 with NVIDIA Jetson Nano 4GB
 
 
 ## About
-This project builds on the open-source Duckietown platform by deploying an autonomous robot with integrated object detection capabilities. It investigates how perception and control systems interact in real time, allowing the robot to identify and react to physical objects (represented by yellow rubber ducks) on the Duckietown road. The project emphasizes practical applications of computer vision and autonomous decision-making in a simplified yet dynamic setting.
+This project builds on the open-source Duckietown platform by deploying an autonomous robot with object detection capabilities. It investigates how perception and control systems interact in real time, allowing the robot to identify and react to physical objects (represented by yellow rubber ducks) on the Duckietown road. The project emphasizes practical applications of computer vision and autonomous decision-making in a simplified yet dynamic setting.
 
 ## Background
 The Duckiebot autonomously drives through a custom-built Duckietown layout, leveraging object detection to identify rubber ducks randomly positioned along the roadway. To support this functionality, we collect training data from the Duckietown simulator and use it to train a YOLOv5 object detection model. Once trained, the model will be integrated into the Duckietown autonomy stack to enhance the robot’s perception capabilities in real time.<br><br>
@@ -56,7 +57,7 @@ dts duckiebot update [your_robot_name]</code></pre>
     Integrate our solution into Duckietown autonomy stack<br>
     Navigate to the <code>[exercise]/packages/solution</code> directory in your local <code>duckietown-lx</code> environment.<br><br>
     Replace <code>[exercise]</code> with the name of your specific module folder (e.g., <code>visual-lane-servoing</code> or <code>object-detection</code>).<br><br>
-    Then, copy the files for  <a href="https://github.com/mimichen123/dgmd-e17/visual-lane-servoing">lane following </a> and  <a href="https://github.com/mimichen123/dgmd-e17/object-detection"> object detection</a>  to the module folder in your repository. This step ensures this implementation is correctly integrated into the Duckietown autonomy stack.
+    Then, copy our files here for  <a href="https://github.com/mimichen123/dgmd-e17/visual-lane-servoing">lane following </a> and  <a href="https://github.com/mimichen123/dgmd-e17/object-detection"> object detection</a>  to the module folder in your repository. This step ensures this implementation is correctly integrated into the Duckietown autonomy stack.
   </li><br>
 
  <li>
@@ -65,17 +66,17 @@ dts duckiebot update [your_robot_name]</code></pre>
   <pre><code>git pull origin [branch-name]</code></pre>
 </li></ol>
 
-## Test on Robot
+## 🚀 Deploy and Test on Duckiebot
 
-Evaluate work locally to check for errors
+#### Run a local evaluation to check for code errors
 ```
 dts code evaluate
 ```
-Test our solution on your robot
+#### Execute Solution on Duckiebot
 ```
 dts code workbench --duckiebot [your_robot_name]
 ```
-Run Duckiebot Joystick Controller<br>
+#### Run Duckiebot Joystick Controller<br>
 <ol><li>Open a new terminal window.</li><br>
 <li>Launch the Duckiebot joystick controller by running</li>  
 </ol>	
@@ -83,11 +84,17 @@ Run Duckiebot Joystick Controller<br>
 ```
 dts duckiebot keyboard_control ![your_robot_name]
 ```
-Lane Following Procedure
+#### Object Detection<br>
+<ol><li>Use the joystick controller to start navigating the Duckiebot</li><br>
+	<li>As the Duckiebot moves, its onboard camera should detect and identify rubber duckies positioned along the road</li>
+</ol><br>
+
+#### Lane Following Procedure<br>
 <ol><li>Click Calibrate to perform sensor and camera calibration</li><br>
 <li>Click start to begin lane-following behavior</li><br>
 <li>Click Stop to stop the robot</li></ol>
-	
+
+___ 
 ## Troubleshooting
 <ul>
   <li>
