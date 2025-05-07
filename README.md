@@ -45,14 +45,14 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
     <strong>Integrate your solution</strong><br>
     Navigate to the <code>[exercise]/packages/solution</code> directory in your local <code>duckietown-lx</code> environment.<br>
     Replace <code>[exercise]</code> with the name of your specific module folder (e.g., <code>visual-lane-servoing</code> or <code>object-detection</code>).<br><br>
-    Next, copy the files from this repository to your repository to test it:<br>
-    <a href="https://github.com/mimichen123/dgmd-e17/visual-lane-servoing">https://github.com/mimichen123/dgmd-e17/visual-lane-servoing</a><br>
-    <a href="https://github.com/mimichen123/dgmd-e17/object-detection">https://github.com/mimichen123/dgmd-e17/object-detection</a><br><br>
+    Next, copy the files from this repository to your directory:<br>
+    <a href="https://github.com/mimichen123/dgmd-e17/visual-lane-servoing">Visual Lane Servoing</a><br>
+    <a href="https://github.com/mimichen123/dgmd-e17/object-detection">Object Detection</a><br><br>
     This step ensures this implementation is correctly integrated into the Duckietown autonomy stack.
   </li>
 </ol>
 
-## Instructions
+## Training
 
 Run the training
 
