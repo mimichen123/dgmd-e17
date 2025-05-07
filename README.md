@@ -17,6 +17,7 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 
 ### Accounts | Software ###
 <ul><li>Duckietown account with valid token</li>
+  <li>Duckietown Shell command installed</li>
 <li>Docker (installed and account set up)</li>
 <li>Python (recommended: version 3.7 or higher)</li>
   <li>OpenCV - for computer vision and image processing</li>
@@ -24,17 +25,17 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 </ul>
 
 
-## Setting up the Python virtual environment:
-Building Duckiebot and 
-Building instructions and manual 
-Fork for the Duckietown GitHub repository
-Create the environment:
+## Setting up the Duckietown learning environment:
+
+Fork the [duckietown-lx repository](https://github.com/duckietown/duckietown-lx)
+
+Set up an upstream remote:
 ```
-python -m venv duckytown-venv
+git remote add upstream git@github.com:duckietown/mooc-exercises.git
 ```
-Activate the environment:
+Enter the exercises folder:
 ```
-.\duckytown-venv\Scripts\activate
+cd mooc-exercises
 ```
 Install required packages:
 ```
