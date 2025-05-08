@@ -58,18 +58,15 @@ dts duckiebot update [your_robot_name]</code></pre>
   To integrate this work, follow the steps below in your local duckietown-lx environment.
   
   ### 📦  Object Detection ###
-  Setup and Data Collection
-  <ul><li>
   <a href="object-detection/duckietown_object_detection_dataset">Sample view of the Duckietown object detection dataset </a> -
   Here's what the dataset will look like, based on an 80/20 train-test split using real Duckietown images.
-</li>
-<li><a href="object-detection/Setup-Data-Collection/setup.ipynb">Setup and collect dataset</a> - Google Colab notebook to create Duckietown object detection dataset<br> 	
-	  <li>Copy this solution file to the following directory: <code>object-detection/Setup-Data-Collection/solution</code><br></li></li>
+<ol>
+<li><a href="object-detection/Setup-Data-Collection/setup.ipynb">Setup and collect dataset</a> - Google Colab notebook to create Duckietown object detection dataset</li><br>
    <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a> - 
-	    Google Colab notebook for model training - train on Yolo5 the object detection model on that dataset. Include your Duckietown token: to point to cloud space and upload model </li>
-    <li><a href="object-detection/integration_activity.py">Object detection integration</a> - Integrate the model into a ROS node by including your dt token </li>	  
-<li>Copy this solution file to the following directory on your local duckietown-lx repository: <code>object-detection/packages/solution</code><br></li>
-  </ul>
+	    Google Colab notebook for model training - train on Yolo5 the object detection model on that dataset. Include your Duckietown token to point to cloud space and upload model </li><br>
+    <li><a href="object-detection/integration_activity.py">Integration</a> - Integrate the model into a ROS node by including your dt token </li>	  <br>
+<li>Copy this integration file to the following directory on your local duckietown-lx repository: <code>object-detection/packages/solution</code><br></li>
+  </ol>
   
   ### 🛣️  Lane Following ###
   Copy the solution files to the following directory: <code>visual-lane-servoing/packages/solution</code><br>  
