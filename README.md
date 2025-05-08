@@ -65,13 +65,13 @@ dts duckiebot update [your_robot_name]</code></pre>
    <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a> - 
 	    Google Colab notebook for model training - train on Yolo5 the object detection model on that dataset. Include your Duckietown token to point to cloud space and upload model </li><br>
     <li><a href="object-detection/integration_activity.py">Integration</a> - Integrate the model into a ROS node by including your dt token </li>	  <br>
-<li>Copy this integration file to the following directory on your local duckietown-lx repository: <code>object-detection/packages/solution</code><br></li>
+<li>Copy the integration file to the following directory on your local duckietown-lx repository: <code>object-detection/packages/solution</code><br></li>
   </ol>
   
   ### 🛣️  Lane Following ###
   Copy the solution files to the following directory: <code>visual-lane-servoing/packages/solution</code><br>  
   <ul>    
-    <li><a href="lane-following/visual_servoing_activity.py"">Visual Lane Servoing</a> - main lane following logic</li>
+    <li><a href="lane-following/visual_servoing_activity.py"">Visual Lane Servoing</a> - main lane following logic</li>	  
   </ul>
 <br><br>
 
