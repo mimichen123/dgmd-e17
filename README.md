@@ -17,7 +17,7 @@ The Duckiebot autonomously drives through a custom-built Duckietown layout, leve
 </ul>
 
 ### Accounts | Software ###
-<ul><li>Duckietown account with valid token (use dts1 not dts2)</li>
+<ul><li>Duckietown account with valid token (use dt1 not dt2)</li>
   <li>Duckietown shell command installed</li>
 <li>Docker (installed and account set up)</li>
 <li>Python (recommended: version 3.7 or higher)</li>
@@ -58,17 +58,17 @@ dts duckiebot update [your_robot_name]</code></pre>
   To integrate this work, follow the steps below in your local duckietown-lx environment.
   
   ### 📦  Object Detection ###
-  Copy the solution files to the following directory: <code>object-detection/packages/solution</code><br>
-  <ul>  
-	  <li>
+  Setup and Data Collection
+  <ul><li>
   <a href="object-detection/duckietown_object_detection_dataset">Sample view of the Duckietown object detection dataset </a> -
   Here's what the dataset will look like, based on an 80/20 train-test split using real Duckietown images.
 </li>
-    <li><a href="object-detection/Setup-Data-Collection/setup.ipynb">Setup and collect dataset</a> - Google Colab notebook to create Duckietown object detection dataset<br>
-	    </li>
-    <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a> - 
-	    Google Colab notebook for model training - train on Yolo5 the object detection model on that dataset </li>
-    <li><a href="object-detection/integration_activity.py">Object detection integration</a> - Integrate the model into a ROS node </li>	  
+<li><a href="object-detection/Setup-Data-Collection/setup.ipynb">Setup and collect dataset</a> - Google Colab notebook to create Duckietown object detection dataset<br> 	
+	  <li>Copy this solution file to the following directory: <code>object-detection/Setup-Data-Collection/solution</code><br></li></li>
+   <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a> - 
+	    Google Colab notebook for model training - train on Yolo5 the object detection model on that dataset. Include your Duckietown token: to point to cloud space and upload model </li>
+    <li><a href="object-detection/integration_activity.py">Object detection integration</a> - Integrate the model into a ROS node by including your dt token </li>	  
+<li>Copy this solution file to the following directory on your local duckietown-lx repository: <code>object-detection/packages/solution</code><br></li>
   </ul>
   
   ### 🛣️  Lane Following ###
@@ -118,6 +118,6 @@ ___
     <pre><code>dts challenges config --docker-username &lt;USERNAME&gt; --docker-password &lt;PASSWORD&gt;</code></pre>
   </li>
   <li>
-    If you are getting errors, check that you are using a <code>dts1</code> token and not a <code>dts2</code> token.
+    If you are getting errors, check that you are using a <code>dt1</code> token and not a <code>dt2</code> token.
   </li>
 </ul>
