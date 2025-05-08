@@ -69,7 +69,7 @@ dts duckiebot update [your_robot_name]</code></pre>
   </ol>
   
   ### 🛣️  Lane Following ###
-  Copy the solution files to the following directory: <code>visual-lane-servoing/packages/solution</code><br>  
+  Copy our solution file to your local duckietown-lx directory: <code>visual-lane-servoing/packages/solution</code><br>  
   <ul>    
     <li><a href="lane-following/visual_servoing_activity.py"">Visual Lane Servoing</a> - main lane following logic</li>	  
   </ul>
