@@ -78,7 +78,7 @@ dts duckiebot update [your_robot_name]</code></pre>
 ## 🚀 Deploy and Test on Duckiebot ##
 
 #### Pull the latest changes from the solution branch<br>   
-  If you have already cloned the repository and copied the solution files, and you want to update your local copy with the latest changes, run the following command in your Duckietown shell:<br><br>
+  Update your local copy with the latest changes, run the following command in your Duckietown shell:<br><br>
   <pre><code>git pull origin [branch-name]</code></pre>
 
 #### Run a local evaluation to check for code errors
@@ -86,6 +86,7 @@ dts duckiebot update [your_robot_name]</code></pre>
 dts code evaluate
 ```
 #### Execute Solution on Duckiebot
+From the terminal window, change into object-detection or visual-lane-servoing directory to execute solutions
 ```
 dts code workbench --duckiebot [your_robot_name]
 ```
@@ -97,6 +98,7 @@ dts code workbench --duckiebot [your_robot_name]
 ```
 dts duckiebot keyboard_control ![your_robot_name]
 ```
+
 ### 📦  Object Detection ### 
 <ol><li>Use the joystick controller to start navigating the Duckiebot</li><br>
 	<li>As the Duckiebot moves, its onboard camera should detect and identify rubber duckies positioned along the road</li>
