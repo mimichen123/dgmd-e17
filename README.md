@@ -86,7 +86,7 @@ dts duckiebot update [your_robot_name]</code></pre>
 dts code evaluate
 ```
 #### Execute Solution on Duckiebot
-From the terminal window, change into object-detection or visual-lane-servoing directory to execute solutions
+From the terminal window, change into object-detection or visual-lane-servoing directory to execute solutions.
 ```
 dts code workbench --duckiebot [your_robot_name]
 ```
