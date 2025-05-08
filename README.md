@@ -64,8 +64,10 @@ dts duckiebot update [your_robot_name]</code></pre>
   <a href="object-detection/duckietown_object_detection_dataset">Setup and collect dataset</a><br>
   Here's a sample of what the dataset will look like, based on an 80/20 train-test split using real Duckietown images.
 </li>
+    <li><a href="object-detection/setup.ipynb">Google Colab notebook to create Duckietown object detection dataset</a><br>
+	    </li>
     <li><a href="object-detection/dt_object_detection_training.ipynb">Object detection training</a><br>
-	    Create Duckietown object detection dataset and train on Yolo5 the object detection model on that dataset  – Google Colab notebook for model training</li>
+	    Train on Yolo5 the object detection model on that dataset  – Google Colab notebook for model training</li>
     <li><a href="object-detection/integration_activity.py">Object detection integration</a> - Integrate the model into a ROS node </li>	  
   </ul>
   
